@@ -8,6 +8,7 @@
 
 import Foundation
 struct Song {
-    let title : String
-    let lyrics : String
+    var title : String
+    var lyrics : String
+   // var verseOrder: String
 }

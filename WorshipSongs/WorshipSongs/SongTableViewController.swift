@@ -10,14 +10,23 @@ import UIKit
 
 class SongTableViewController: UITableViewController, UISearchResultsUpdating {
     
-    var songs = ["Jesus is my Lord", "Kartharai Thuthipom"]
-    var filteredTableData = [String]()
+    var songs = [Song]()
+    var filteredTableData = [Song]()
     var resultSearchController = UISearchController()
     
     // MARK: - UIViewController lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.songs = [Song(title:"Chocolate", lyrics:"chocolate Bar"),
+            Song(title:"Chocolate", lyrics:"chocolate Chip"),
+            Song(title:"Chocolate", lyrics:"dark chocolate"),
+            Song(title:"Hard", lyrics:"lollipop"),
+            Song(title:"Hard", lyrics:"candy cane"),
+            Song(title:"Hard", lyrics:"jaw breaker"),
+            Song(title:"Other", lyrics:"caramel"),
+            Song(title:"Other", lyrics:"sour chew"),
+            Song(title:"Other", lyrics:"gummi bear")]
         self.tableView.editing = true
         self.resultSearchController = ({let controller = UISearchController(searchResultsController: nil)
             controller.searchResultsUpdater = self
@@ -44,11 +53,11 @@ class SongTableViewController: UITableViewController, UISearchResultsUpdating {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         if(self.resultSearchController.active){
-            cell.textLabel?.text = filteredTableData[indexPath.row]
+            cell.textLabel?.text = filteredTableData[indexPath.row].title
             return cell
         }
         else{
-            cell.textLabel?.text = songs[indexPath.row]
+            cell.textLabel?.text = songs[indexPath.row].title
             return cell
             
         }
@@ -66,20 +75,26 @@ class SongTableViewController: UITableViewController, UISearchResultsUpdating {
     {
         filteredTableData.removeAll(keepCapacity: false)
         
-        let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
-        let array = (songs as NSArray).filteredArrayUsingPredicate(searchPredicate)
-        filteredTableData = array as! [String]
-        
+        let searchText = searchController.searchBar.text
+        filterContentForSearchText(searchText!)
         self.tableView.reloadData()
     }
     
-    /*override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
-    let movedObject = self.songs[sourceIndexPath.row]
-    songs.removeAtIndex(sourceIndexPath.row)
-    songs.insert(movedObject, atIndex: destinationIndexPath.row)
-    NSLog("%@", "\(sourceIndexPath.row) => \(destinationIndexPath.row) \(songs)")
-    // To check for correctness enable:  self.tableView.reloadData()
-    }*/
-    
-    
+    func filterContentForSearchText(searchText: String) {
+        if(searchText == "")
+        {
+            filteredTableData = songs
+        }
+        else
+        {
+            // Assuming `Author` as Class Or you may use any other method for filtering data
+            filteredTableData = songs.filter({ ( a: Song) -> Bool in
+                
+                let nameMatch = a.title.rangeOfString(searchText, options:
+                    NSStringCompareOptions.CaseInsensitiveSearch)
+                return nameMatch != nil
+            })
+            
+        }
+    }
 }
