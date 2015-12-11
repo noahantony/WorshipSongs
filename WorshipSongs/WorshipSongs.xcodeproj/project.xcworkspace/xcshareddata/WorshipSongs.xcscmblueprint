@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03A3A697DD4B57265F04FE300E400C9F5532AA7C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03A3A697DD4B57265F04FE300E400C9F5532AA7C" : 0,
+    "E556B4AD38E7FB0E9D4FB4275E2E1ACC5F3B1D50" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CF88956E-3D32-43D8-A14B-FADBBD4F0194",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03A3A697DD4B57265F04FE300E400C9F5532AA7C" : "WorshipSongs\/",
+    "E556B4AD38E7FB0E9D4FB4275E2E1ACC5F3B1D50" : "..\/..\/..\/Library\/Application%20Support\/openlp\/Data\/songs"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WorshipSongs",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WorshipSongs\/WorshipSongs.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/noahantony\/WorshipSongs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03A3A697DD4B57265F04FE300E400C9F5532AA7C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/crunchersaspire\/worshipsongs-db-dev.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E556B4AD38E7FB0E9D4FB4275E2E1ACC5F3B1D50"
+    }
+  ]
+}
