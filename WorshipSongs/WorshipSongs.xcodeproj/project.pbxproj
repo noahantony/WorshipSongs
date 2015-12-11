@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A7EA84E1BCDEBE600C5EB8B /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EA84D1BCDEBE600C5EB8B /* Songs.swift */; settings = {ASSET_TAGS = (); }; };
-		0A7EA8501BCDEC4700C5EB8B /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EA84F1BCDEC4700C5EB8B /* SongTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0A7EA84E1BCDEBE600C5EB8B /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EA84D1BCDEBE600C5EB8B /* Songs.swift */; };
+		0A7EA8501BCDEC4700C5EB8B /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EA84F1BCDEC4700C5EB8B /* SongTableViewController.swift */; };
+		0AEEE36B1C1AB13D006AF277 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE3621C1AB13D006AF277 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0AEEE36C1C1AB13D006AF277 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE3641C1AB13D006AF277 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0AEEE36D1C1AB13D006AF277 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE3661C1AB13D006AF277 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0AEEE36E1C1AB13D006AF277 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE3681C1AB13D006AF277 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0AEEE36F1C1AB13D006AF277 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE36A1C1AB13D006AF277 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0AEEE3711C1AB168006AF277 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEEE3701C1AB168006AF277 /* libz.1.dylib */; };
+		0AEEE3731C1AB181006AF277 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEEE3721C1AB181006AF277 /* libsqlite3.dylib */; };
+		0AEEE37C1C1AB1AF006AF277 /* songs.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0AEEE3791C1AB1AF006AF277 /* songs.sqlite */; };
+		0AEEE3821C1AB303006AF277 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE3811C1AB303006AF277 /* Util.swift */; };
+		0AEEE3841C1AB32D006AF277 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE3831C1AB32D006AF277 /* ModelManager.swift */; };
+		0AEEE3861C1AB3DA006AF277 /* StudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEE3851C1AB3DA006AF277 /* StudentInfo.swift */; };
 		0AFA9A961BC56081002E7208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA9A951BC56081002E7208 /* AppDelegate.swift */; };
 		0AFA9A9B1BC56081002E7208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA9A991BC56081002E7208 /* Main.storyboard */; };
 		0AFA9A9E1BC56081002E7208 /* WorshipSongs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA9A9C1BC56081002E7208 /* WorshipSongs.xcdatamodeld */; };
@@ -38,6 +49,24 @@
 /* Begin PBXFileReference section */
 		0A7EA84D1BCDEBE600C5EB8B /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		0A7EA84F1BCDEC4700C5EB8B /* SongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
+		0AEEE35F1C1AB13D006AF277 /* WorshipSongs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorshipSongs-Bridging-Header.h"; sourceTree = "<group>"; };
+		0AEEE3601C1AB13D006AF277 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		0AEEE3611C1AB13D006AF277 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		0AEEE3621C1AB13D006AF277 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		0AEEE3631C1AB13D006AF277 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		0AEEE3641C1AB13D006AF277 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		0AEEE3651C1AB13D006AF277 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		0AEEE3661C1AB13D006AF277 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		0AEEE3671C1AB13D006AF277 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		0AEEE3681C1AB13D006AF277 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		0AEEE3691C1AB13D006AF277 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		0AEEE36A1C1AB13D006AF277 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		0AEEE3701C1AB168006AF277 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		0AEEE3721C1AB181006AF277 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		0AEEE3791C1AB1AF006AF277 /* songs.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = songs.sqlite; path = "../../../../../../Library/Application Support/openlp/Data/songs/songs.sqlite"; sourceTree = "<group>"; };
+		0AEEE3811C1AB303006AF277 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		0AEEE3831C1AB32D006AF277 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		0AEEE3851C1AB3DA006AF277 /* StudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInfo.swift; sourceTree = "<group>"; };
 		0AFA9A921BC56081002E7208 /* WorshipSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorshipSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA9A951BC56081002E7208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFA9A9A1BC56081002E7208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEEE3731C1AB181006AF277 /* libsqlite3.dylib in Frameworks */,
+				0AEEE3711C1AB168006AF277 /* libz.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +118,41 @@
 			name = Songs;
 			sourceTree = "<group>";
 		};
+		0AEEE35E1C1AB118006AF277 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0AEEE3601C1AB13D006AF277 /* FMDB.h */,
+				0AEEE3611C1AB13D006AF277 /* FMDatabase.h */,
+				0AEEE3621C1AB13D006AF277 /* FMDatabase.m */,
+				0AEEE3631C1AB13D006AF277 /* FMResultSet.h */,
+				0AEEE3641C1AB13D006AF277 /* FMResultSet.m */,
+				0AEEE3651C1AB13D006AF277 /* FMDatabaseQueue.h */,
+				0AEEE3661C1AB13D006AF277 /* FMDatabaseQueue.m */,
+				0AEEE3671C1AB13D006AF277 /* FMDatabaseAdditions.h */,
+				0AEEE3681C1AB13D006AF277 /* FMDatabaseAdditions.m */,
+				0AEEE3691C1AB13D006AF277 /* FMDatabasePool.h */,
+				0AEEE36A1C1AB13D006AF277 /* FMDatabasePool.m */,
+				0AEEE35F1C1AB13D006AF277 /* WorshipSongs-Bridging-Header.h */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		0AEEE3741C1AB193006AF277 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AEEE3851C1AB3DA006AF277 /* StudentInfo.swift */,
+				0AEEE3831C1AB32D006AF277 /* ModelManager.swift */,
+				0AEEE3811C1AB303006AF277 /* Util.swift */,
+				0AEEE3791C1AB1AF006AF277 /* songs.sqlite */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		0AFA9A891BC56081002E7208 = {
 			isa = PBXGroup;
 			children = (
+				0AEEE3721C1AB181006AF277 /* libsqlite3.dylib */,
+				0AEEE3701C1AB168006AF277 /* libz.1.dylib */,
 				0AFA9A941BC56081002E7208 /* WorshipSongs */,
 				0AFA9AAC1BC56082002E7208 /* WorshipSongsTests */,
 				0AFA9AB71BC56082002E7208 /* WorshipSongsUITests */,
@@ -110,6 +173,8 @@
 		0AFA9A941BC56081002E7208 /* WorshipSongs */ = {
 			isa = PBXGroup;
 			children = (
+				0AEEE3741C1AB193006AF277 /* Model */,
+				0AEEE35E1C1AB118006AF277 /* FMDB */,
 				0A7EA84C1BCDEB1D00C5EB8B /* Songs */,
 				0AFA9A951BC56081002E7208 /* AppDelegate.swift */,
 				0AFA9A991BC56081002E7208 /* Main.storyboard */,
@@ -201,6 +266,7 @@
 		0AFA9A8A1BC56081002E7208 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = com.mcruncher;
 				TargetAttributes = {
@@ -244,6 +310,7 @@
 			files = (
 				0AFA9AA31BC56081002E7208 /* LaunchScreen.storyboard in Resources */,
 				0AFA9AA01BC56081002E7208 /* Assets.xcassets in Resources */,
+				0AEEE37C1C1AB1AF006AF277 /* songs.sqlite in Resources */,
 				0AFA9A9B1BC56081002E7208 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEEE3821C1AB303006AF277 /* Util.swift in Sources */,
+				0AEEE36C1C1AB13D006AF277 /* FMResultSet.m in Sources */,
 				0A7EA84E1BCDEBE600C5EB8B /* Songs.swift in Sources */,
+				0AEEE3861C1AB3DA006AF277 /* StudentInfo.swift in Sources */,
 				0AFA9A9E1BC56081002E7208 /* WorshipSongs.xcdatamodeld in Sources */,
+				0AEEE36D1C1AB13D006AF277 /* FMDatabaseQueue.m in Sources */,
+				0AEEE36F1C1AB13D006AF277 /* FMDatabasePool.m in Sources */,
 				0A7EA8501BCDEC4700C5EB8B /* SongTableViewController.swift in Sources */,
+				0AEEE3841C1AB32D006AF277 /* ModelManager.swift in Sources */,
+				0AEEE36B1C1AB13D006AF277 /* FMDatabase.m in Sources */,
 				0AFA9A961BC56081002E7208 /* AppDelegate.swift in Sources */,
+				0AEEE36E1C1AB13D006AF277 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,10 +489,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WorshipSongs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mcruncher.WorshipSongs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorshipSongs/WorshipSongs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -425,10 +503,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WorshipSongs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mcruncher.WorshipSongs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorshipSongs/WorshipSongs-Bridging-Header.h";
 			};
 			name = Release;
 		};
